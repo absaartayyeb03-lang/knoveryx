@@ -51,7 +51,7 @@ const Navbar = () => {
           <Link href="/" className="flex items-center gap-2">
             <Image src="/images/main-logo.png" alt="logo" width={32} height={32} />
             <div className="flex flex-col leading-tight">
-               <span className="font-bold text-lg text-gray-900 tracking-tight">SkillSphere</span>
+               <span className="font-bold text-lg text-gray-900 tracking-tight">Knoveryx</span>
                <span className="text-[10px] font-bold text-[#174933] uppercase tracking-widest">Education</span>
             </div>
           </Link>

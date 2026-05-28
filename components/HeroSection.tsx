@@ -77,7 +77,7 @@ const HeroSection = () => {
 
         <TextAnimation>
           <p className="text-center md:text-left text-lg text-slate-600 max-w-lg mt-4 leading-relaxed">
-            SkillSphere Education LLC delivers world-class academic support,
+            Knoveryx Education LLC delivers world-class academic support,
             teacher training, and professional development through borderless,
             inclusive pedagogy.
           </p>
@@ -97,7 +97,7 @@ const HeroSection = () => {
         {/* Showcase Image */}
         <img
           src="/images/heroimg01.png"
-          alt="SkillSphere Global Platform"
+          alt="Knoveryx Global Platform"
           className="object-cover w-full max-w-xs sm:max-w-sm lg:max-w-md xl:max-w-lg transition-all duration-500"
         />
       </div>
