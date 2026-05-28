@@ -20,7 +20,7 @@ const Empower = () => {
             </TextAnimation>
             <TextAnimation>
             <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-              SkillSphere Education is an interdisciplinary digital learning platform offering 
+              Knoveryx Education is an interdisciplinary digital learning platform offering 
               academic support, teacher training, and professional development across global curricula. 
               Our mission is to empower learners through accessible, example-rich instruction.
             </p>

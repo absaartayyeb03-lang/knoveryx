@@ -16,7 +16,7 @@ const CTA = () => {
 
       {/* Brand / Badge */}
       <div className="text-blue-600 font-semibold text-lg mb-2">
-        SkillSphere <span className="text-green-700">Education</span>
+        Knoveryx <span className="text-green-700">Education</span>
       </div>
 
       {/* Main Heading */}

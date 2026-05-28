@@ -4,7 +4,7 @@ const HowItWorks = () => {
     <section className="px-6 lg:px-24 py-16">
       <TextAnimation>
       <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center lg:text-left">
-        How SkillSphere works:
+        How Knoveryx works:
       </h2>
 </TextAnimation>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">

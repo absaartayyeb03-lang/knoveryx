@@ -39,7 +39,7 @@ export const TeacherAttraction = () => {
             </h3>
           </TextAnimation>
           <p className="mt-6 text-xl text-gray-600 leading-relaxed">
-            SkillSphere is the global bridge for expertise. We map teaching to
+            Knoveryx is the global bridge for expertise. We map teaching to
             International, British, and Regional boards through a unified
             curriculum engine.
           </p>
@@ -147,7 +147,7 @@ export const TeacherAttraction = () => {
             </h2>
             
             <p className="text-xl text-slate-600 mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-              SkillSphere connects you with world-class tutors across British, International, and Professional curriculums through a borderless platform.
+              Knoveryx connects you with world-class tutors across British, International, and Professional curriculums through a borderless platform.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -173,7 +173,7 @@ export const TeacherAttraction = () => {
             <div className="relative z-10 w-full max-w-[500px]">
               <img
                 src="/images/path-to-your-illustration.png" 
-                alt="International SkillSphere Tutor"
+                alt="International Knoveryx Tutor"
                 className="w-full h-auto transform hover:scale-105 transition-transform duration-500 drop-shadow-2xl"
               />
               

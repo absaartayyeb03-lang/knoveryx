@@ -97,7 +97,7 @@ const Page = () => {
             <div className="col flex-1 mb-6">
               <TextAnimation>
                 <p className="text-base sm:text-lg md:text-[1.125rem] font-medium tracking-[1.25] leading-relaxed">
-                  SkillSphere Education LLC is an interdisciplinary digital
+                  Knoveryx Education LLC is an interdisciplinary digital
                   learning platform co-founded by{" "}
                   <span className="font-bold text-[#063B8D]">
                     Muhammad Tayyeb Akram
@@ -109,7 +109,7 @@ const Page = () => {
                   , offering academic support, teacher training, and
                   professional development across global curricula. Designed to
                   meet the evolving needs of students and educators in Oman,
-                  Pakistan, and beyond, SkillSphere combines rigorous content
+                  Pakistan, and beyond, Knoveryx combines rigorous content
                   with flexible delivery.
                 </p>
               </TextAnimation>
