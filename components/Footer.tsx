@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <h2 className="text-2xl font-black mb-6 tracking-tighter">
-              SkillSphere<span className="text-[#ff6a97]">.</span>
+              Knoveryx<span className="text-[#ff6a97]">.</span>
             </h2>
             <p className="text-[#ffffffaf] text-sm leading-relaxed mb-6">
               An interdisciplinary digital learning platform empowering learners through 
@@ -58,7 +58,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={18} className="text-[#ff6a97] shrink-0" />
-                <span>info@skillsphere.edu</span>
+                <span>info@knoveryx.com</span>
               </div>
             </div>
             <div className="mt-8 p-4 bg-white/5 border border-white/10 rounded-2xl">
@@ -71,7 +71,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:row items-center justify-between gap-4 text-xs text-[#ffffffaf]">
-          <p>© {new Date().getFullYear()} SkillSphere Education LLC. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Knoveryx Education LLC. All rights reserved.</p>
           <div className="flex gap-8">
             <span className="hover:text-white cursor-pointer transition-colors">Privacy Policy</span>
             <span className="hover:text-white cursor-pointer transition-colors">Terms of Service</span>
