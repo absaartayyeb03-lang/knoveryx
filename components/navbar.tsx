@@ -48,11 +48,11 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md z-[100] border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
           
-          <Link href="/" className="flex items-center gap-2">
-            <Image src="/images/main-logo.png" alt="logo" width={32} height={32} />
+          <Link href="/" className="flex items-center gap-3">
+            <Image src="/images/main-logo.png" alt="Knoveryx logo" width={48} height={48} className="object-contain" />
             <div className="flex flex-col leading-tight">
                <span className="font-bold text-lg text-gray-900 tracking-tight">Knoveryx</span>
-               <span className="text-[10px] font-bold text-[#174933] uppercase tracking-widest">Education</span>
+               <span className="text-[10px] font-bold text-[#8B0000] uppercase tracking-widest">Intelligent Learning Networks</span>
             </div>
           </Link>
 
