@@ -171,11 +171,50 @@ export const TeacherAttraction = () => {
             <div className="absolute inset-0 bg-[#366740]/5 blur-[120px] rounded-full" />
 
             <div className="relative z-10 w-full max-w-[500px]">
-              <img
-                src="/images/path-to-your-illustration.png" 
-                alt="International Knoveryx Tutor"
-                className="w-full h-auto transform hover:scale-105 transition-transform duration-500 drop-shadow-2xl"
-              />
+              <svg viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto transform hover:scale-105 transition-transform duration-500 drop-shadow-2xl" aria-label="Knoveryx tutor illustration">
+                {/* Background circle */}
+                <circle cx="240" cy="240" r="220" fill="#f0fdf4" />
+                <circle cx="240" cy="240" r="180" fill="#dcfce7" opacity="0.6" />
+                {/* Desk */}
+                <rect x="80" y="310" width="320" height="16" rx="8" fill="#174933" />
+                <rect x="110" y="326" width="12" height="60" rx="6" fill="#174933" />
+                <rect x="358" y="326" width="12" height="60" rx="6" fill="#174933" />
+                {/* Laptop base */}
+                <rect x="130" y="270" width="220" height="40" rx="8" fill="#1e293b" />
+                <rect x="140" y="275" width="200" height="30" rx="4" fill="#334155" />
+                {/* Laptop screen */}
+                <rect x="150" y="150" width="180" height="128" rx="10" fill="#1e293b" />
+                <rect x="158" y="158" width="164" height="112" rx="6" fill="#033D8B" />
+                {/* Screen content lines */}
+                <rect x="170" y="172" width="80" height="8" rx="4" fill="white" opacity="0.9" />
+                <rect x="170" y="188" width="120" height="6" rx="3" fill="white" opacity="0.5" />
+                <rect x="170" y="202" width="100" height="6" rx="3" fill="white" opacity="0.5" />
+                <rect x="170" y="216" width="60" height="6" rx="3" fill="#43d2b1" opacity="0.9" />
+                {/* Video call avatar on screen */}
+                <circle cx="282" cy="210" r="28" fill="#ff6a97" opacity="0.3" />
+                <circle cx="282" cy="203" r="12" fill="#ff6a97" />
+                <path d="M262 230 Q282 218 302 230" stroke="#ff6a97" strokeWidth="3" fill="none" strokeLinecap="round" />
+                {/* Person/tutor silhouette */}
+                <circle cx="240" cy="110" r="36" fill="#174933" />
+                <circle cx="240" cy="104" r="22" fill="#fde68a" />
+                {/* Face details */}
+                <circle cx="233" cy="102" r="2.5" fill="#1e293b" />
+                <circle cx="247" cy="102" r="2.5" fill="#1e293b" />
+                <path d="M234 110 Q240 115 246 110" stroke="#1e293b" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+                {/* Body */}
+                <path d="M200 270 Q210 230 240 225 Q270 230 280 270" fill="#033D8B" />
+                {/* Floating globe */}
+                <circle cx="370" cy="170" r="32" fill="white" stroke="#43d2b1" strokeWidth="2" />
+                <ellipse cx="370" cy="170" rx="32" ry="14" stroke="#43d2b1" strokeWidth="1.5" fill="none" />
+                <line x1="338" y1="170" x2="402" y2="170" stroke="#43d2b1" strokeWidth="1.5" />
+                <line x1="370" y1="138" x2="370" y2="202" stroke="#43d2b1" strokeWidth="1.5" />
+                {/* Stars / sparkles */}
+                <circle cx="108" cy="160" r="5" fill="#ff6a97" />
+                <circle cx="108" cy="160" r="8" fill="#ff6a97" opacity="0.2" />
+                <circle cx="390" cy="290" r="4" fill="#43d2b1" />
+                <circle cx="390" cy="290" r="7" fill="#43d2b1" opacity="0.2" />
+                <circle cx="130" cy="240" r="3" fill="#fbbf24" />
+              </svg>
               
               {/* Floating Success Badge */}
               <div className="absolute -bottom-6 -left-6 bg-white p-5 rounded-3xl shadow-2xl border border-slate-50 hidden lg:flex items-center gap-4">

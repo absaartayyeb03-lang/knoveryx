@@ -39,7 +39,7 @@ export default function TutorProfileSetup() {
     topic: "",
     price: 0,
     bio: "",
-    country: "Pakistan",
+    country: "",
     video_url: "",
     image_url: "",
   });
@@ -79,7 +79,7 @@ export default function TutorProfileSetup() {
             topic: data.topic || "",
             price: data.price || 0,
             bio: data.bio || "",
-            country: data.country || "Pakistan",
+            country: data.country || "",
             video_url: data.video_url || "",
             image_url: data.image_url || "",
           });
