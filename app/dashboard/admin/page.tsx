@@ -14,7 +14,7 @@ export default function AdminReviewPage() {
 
   // --- 1. SECURITY CHECK ---
   // Change this to your actual Clerk email address
-  const ADMIN_EMAIL = "salmanabdullah619@gmail.com"; 
+  const ADMIN_EMAIL = "asmarashafqat@cloud.neduet.edu.pk";
 
   const supabase = useMemo(() => {
     return createBrowserClient(
