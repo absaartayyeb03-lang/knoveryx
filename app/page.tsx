@@ -173,7 +173,7 @@ const Page = () => {
 
         <section className="home-section">
           <CompanionCard
-            id="123"
+            id="ava-science"
             name="Ava — Artificial Intelligence Study Companion"
             topic="Understanding the Human Brain"
             subject="science"
@@ -182,7 +182,7 @@ const Page = () => {
           />
 
           <CompanionCard
-            id="456"
+            id="leo-maths"
             name="Leo — Math Learning Companion"
             topic="Derivatives & Integrals"
             subject="maths"
@@ -191,7 +191,7 @@ const Page = () => {
           />
 
           <CompanionCard
-            id="789"
+            id="maya-language"
             name="Maya — Language Practice Companion"
             topic="English Reading & Vocabulary"
             subject="language"

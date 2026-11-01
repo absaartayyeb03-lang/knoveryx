@@ -14,7 +14,7 @@ const Navbar = () => {
   const [isTeacher, setIsTeacher] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  const ADMIN_EMAIL = "your-email@example.com";
+  const ADMIN_EMAIL = "asmarashafqat@cloud.neduet.edu.pk";
   const isAdmin = user?.primaryEmailAddress?.emailAddress === ADMIN_EMAIL;
 
   const supabase = createBrowserClient(
