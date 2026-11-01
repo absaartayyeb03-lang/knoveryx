@@ -31,7 +31,7 @@ export const InquiryForm = ({ subject }: { subject: string }) => {
   const onSubmit = (values: z.infer<typeof inquirySchema>) => {
     // Construct the WhatsApp Message
     const encodedMessage = encodeURIComponent(
-      `*New Inquiry from SkillSphere*\n\n` +
+      `*New Inquiry from Knoveryx*\n\n` +
       `*Interested In:* ${subject}\n` +
       `*Parent Name:* ${values.name}\n` +
       `*Gmail:* ${values.gmail}\n` +

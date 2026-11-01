@@ -130,7 +130,7 @@ export default function BecomeTutorPage() {
       <div className="py-20">
         <PromoSection
           title="Teach your way"
-          description="SkillSphere gives you the tools to grow your own business. You decide when and how much you work."
+          description="Knoveryx gives you the tools to grow your own business. You decide when and how much you work."
           points={[
             "Set your own price",
             "Teach anytime, anywhere",
