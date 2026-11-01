@@ -140,7 +140,7 @@ export default function StudentDashboard() {
 
                 <div className="w-full md:w-1/3 flex justify-end">
                   <button 
-                    onClick={() => window.open(`https://meet.jit.si/skillsphere-${lesson.id}`, '_blank')}
+                    onClick={() => window.open(`https://meet.jit.si/knoveryx-${lesson.id}`, '_blank')}
                     className="flex items-center gap-2 bg-[#ff6a97] hover:bg-[#ff4d8d] text-white px-6 py-2.5 rounded-lg font-bold transition-all active:scale-95 w-full md:w-auto justify-center"
                   >
                     <Video className="w-4 h-4" />

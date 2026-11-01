@@ -1,35 +1,85 @@
-// app/dashboard/tutor/layout.tsx
-import Link from "next/link";
-import { UserCircle, CalendarCheck } from "lucide-react";
+"use client";
 
-export default function TutorLayout({ children }: { children: React.ReactNode }) {
-  const menu = [
-    { name: "Lessons", href: "/dashboard/tutor/lessons", icon: CalendarCheck },
-    { name: "My Profile", href: "/dashboard/tutor/profile", icon: UserCircle },
-  ];
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { LayoutDashboard, BookOpen, Calendar, CreditCard, Clock, Users, LogOut } from "lucide-react";
+import { UserButton } from "@clerk/nextjs";
+
+const navItems = [
+  { href: "/dashboard/tutor", label: "Overview", icon: LayoutDashboard, exact: true },
+  { href: "/dashboard/tutor/lessons", label: "My Lessons", icon: BookOpen },
+  { href: "/dashboard/tutor/schedule", label: "Schedule", icon: Calendar },
+  { href: "/dashboard/tutor/students", label: "Students", icon: Users },
+  { href: "/dashboard/tutor/pending", label: "Pending", icon: Clock },
+  { href: "/dashboard/tutor/pay", label: "Payments", icon: CreditCard },
+];
+
+export default function TutorDashboardLayout({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+
+  const isActive = (href: string, exact?: boolean) =>
+    exact ? pathname === href : pathname.startsWith(href);
 
   return (
-    <div className="flex min-h-screen bg-white"> {/* Changed background for a cleaner feel */}
-      <aside className="w-64 border-r bg-gray-50/50 p-6 hidden md:block sticky top-0 h-screen">
-        <div className="mb-8 px-4">
-          <h2 className="text-xs font-bold text-gray-400 uppercase tracking-widest">Tutor Panel</h2>
+    <div className="flex min-h-screen bg-gray-50">
+      {/* Sidebar */}
+      <aside className="hidden md:flex w-64 flex-col border-r bg-white shadow-sm">
+        <div className="p-6 border-b">
+          <Link href="/" className="text-xl font-black text-[#033D8B]">Knoveryx</Link>
+          <p className="text-xs text-gray-500 mt-1 font-medium uppercase tracking-widest">Tutor Portal</p>
         </div>
-        <nav className="space-y-2">
-          {menu.map((item) => (
-            <Link 
-              key={item.name} 
-              href={item.href} 
-              className="flex items-center gap-3 px-4 py-3 text-sm font-semibold rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-gray-100 transition-all text-gray-700"
+
+        <nav className="flex-1 p-4 space-y-1">
+          {navItems.map(({ href, label, icon: Icon, exact }) => (
+            <Link
+              key={href}
+              href={href}
+              className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-all ${
+                isActive(href, exact)
+                  ? "bg-[#033D8B] text-white shadow-md shadow-blue-900/20"
+                  : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
+              }`}
             >
-              <item.icon size={20} className="text-[#ff6a97]" /> {/* Using your brand pink */}
-              {item.name}
+              <Icon className="w-4 h-4" />
+              {label}
             </Link>
           ))}
         </nav>
+
+        <div className="p-4 border-t flex items-center justify-between">
+          <UserButton afterSignOutUrl="/" />
+          <Link href="/" className="text-xs text-gray-400 hover:text-gray-600 flex items-center gap-1">
+            <LogOut className="w-3 h-3" /> Home
+          </Link>
+        </div>
       </aside>
-      
-      {/* This 'main' needs to be flex-1 to occupy all remaining space */}
-      <main className="flex-1 overflow-y-auto">
+
+      {/* Mobile Top Bar */}
+      <div className="md:hidden fixed top-0 left-0 right-0 z-50 bg-white border-b px-4 py-3 flex items-center justify-between">
+        <Link href="/" className="text-lg font-black text-[#033D8B]">Knoveryx</Link>
+        <div className="flex items-center gap-3">
+          <UserButton afterSignOutUrl="/" />
+        </div>
+      </div>
+
+      {/* Mobile Bottom Nav */}
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t flex">
+        {navItems.slice(0, 5).map(({ href, label, icon: Icon, exact }) => (
+          <Link
+            key={href}
+            href={href}
+            className={`flex-1 flex flex-col items-center py-2 gap-1 text-[10px] font-bold transition-colors ${
+              isActive(href, exact) ? "text-[#033D8B]" : "text-gray-400"
+            }`}
+          >
+            <Icon className="w-5 h-5" />
+            {label}
+          </Link>
+        ))}
+      </nav>
+
+      {/* Main Content */}
+      <main className="flex-1 overflow-y-auto pt-14 md:pt-0 pb-16 md:pb-0">
         {children}
       </main>
     </div>
