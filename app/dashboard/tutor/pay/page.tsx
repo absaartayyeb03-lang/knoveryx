@@ -135,14 +135,14 @@ export default function ManualPaymentPage() {
               </div>
               <div className="flex justify-between border-b pb-2">
                 <span className="text-slate-400">Account Title</span>
-                <span className="font-bold">SkillSphere Education</span>
+                <span className="font-bold">Knoveryx Education</span>
               </div>
               <div className="flex justify-between border-b pb-2">
                 <span className="text-slate-400">IBAN / Account #</span>
                 <span className="font-bold">PK00MEZN000102030405</span>
               </div>
               <div className="bg-pink-50 p-3 rounded-xl text-[#ff6a97] font-bold text-center">
-                Fee Amount: 5,000 PKR / 10 OMR
+                Fee Amount: 5,000 PKR
               </div>
             </div>
           </div>
