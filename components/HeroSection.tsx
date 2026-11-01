@@ -46,23 +46,23 @@ const HeroSection = () => {
       <div className="flex flex-col items-center md:items-start z-10 py-4 md:py-5 max-w-xl">
         <div className="flex flex-wrap items-center justify-center p-1.5 rounded-full border border-slate-300 text-gray-600 text-xs bg-white/50 backdrop-blur-sm">
           <div className="flex items-center">
-            <img
-              className="size-7 rounded-full border-2 border-white"
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=50"
-              alt="userImage1"
-            />
-            <img
-              className="size-7 rounded-full border-2 border-white -translate-x-2"
-              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=50"
-              alt="userImage2"
-            />
-            <img
-              className="size-7 rounded-full border-2 border-white -translate-x-4"
-              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=50&h=50&auto=format&fit=crop"
-              alt="userImage3"
-            />
+            {/* Avatar 1 — teal */}
+            <svg className="size-7 rounded-full border-2 border-white" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14" cy="14" r="14" fill="#43d2b1"/>
+              <text x="14" y="18" textAnchor="middle" fontSize="11" fontWeight="700" fill="white" fontFamily="sans-serif">A</text>
+            </svg>
+            {/* Avatar 2 — brand blue */}
+            <svg className="size-7 rounded-full border-2 border-white -translate-x-2" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14" cy="14" r="14" fill="#033D8B"/>
+              <text x="14" y="18" textAnchor="middle" fontSize="11" fontWeight="700" fill="white" fontFamily="sans-serif">S</text>
+            </svg>
+            {/* Avatar 3 — pink accent */}
+            <svg className="size-7 rounded-full border-2 border-white -translate-x-4" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14" cy="14" r="14" fill="#ff6a97"/>
+              <text x="14" y="18" textAnchor="middle" fontSize="11" fontWeight="700" fill="white" fontFamily="sans-serif">M</text>
+            </svg>
           </div>
-          {/* Changed context to International / Worldwide */}
+          {/* Empowering a global community of learners */}
           <p className="-translate-x-2 font-medium">
             Empowering a global community of learners
           </p>
@@ -77,7 +77,7 @@ const HeroSection = () => {
 
         <TextAnimation>
           <p className="text-center md:text-left text-lg text-slate-600 max-w-lg mt-4 leading-relaxed">
-            Knoveryx Education LLC delivers world-class academic support,
+            Knoveryx Education delivers world-class academic support,
             teacher training, and professional development through borderless,
             inclusive pedagogy.
           </p>

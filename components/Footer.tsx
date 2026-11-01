@@ -54,7 +54,7 @@ const Footer = () => {
             <div className="space-y-4 text-[#ffffffaf] text-sm">
               <div className="flex items-start gap-3">
                 <MapPin size={18} className="text-[#ff6a97] shrink-0" />
-                <span>Supporting learners in Oman, Pakistan, and beyond.</span>
+                <span>Learn from anywhere — open to students, families and teachers in every country.</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={18} className="text-[#ff6a97] shrink-0" />
@@ -63,7 +63,7 @@ const Footer = () => {
             </div>
             <div className="mt-8 p-4 bg-white/5 border border-white/10 rounded-2xl">
               <p className="text-xs text-[#ffffffaf]">
-                Co-founded by <span className="text-white font-medium">M. Tayyeb Akram</span> & <span className="text-white font-medium">Dr. Asmara Shafqat</span>
+                Founded by <span className="text-white font-medium">M. Tayyeb Akram</span>
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:row items-center justify-between gap-4 text-xs text-[#ffffffaf]">
-          <p>© {new Date().getFullYear()} Knoveryx Education LLC. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Knoveryx Education. All rights reserved.</p>
           <div className="flex gap-8">
             <span className="hover:text-white cursor-pointer transition-colors">Privacy Policy</span>
             <span className="hover:text-white cursor-pointer transition-colors">Terms of Service</span>
