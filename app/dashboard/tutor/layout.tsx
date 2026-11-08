@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LayoutDashboard, BookOpen, Calendar, CreditCard, Clock, Users, LogOut } from "lucide-react";
 import { UserButton } from "@clerk/nextjs";
+import AiChatWidget from "@/components/AiChatWidget";
 
 const navItems = [
   { href: "/dashboard/tutor", label: "Overview", icon: LayoutDashboard, exact: true },
@@ -82,6 +83,8 @@ export default function TutorDashboardLayout({ children }: { children: React.Rea
       <main className="flex-1 overflow-y-auto pt-14 md:pt-0 pb-16 md:pb-0">
         {children}
       </main>
+
+      <AiChatWidget role="tutor" />
     </div>
   );
 }
