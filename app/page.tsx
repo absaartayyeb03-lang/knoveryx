@@ -41,19 +41,7 @@ const Page = () => {
         <HeroSection />
 
         {/* ================= STATS ================= */}
-        <section className="grid grid-cols-2 md:grid-cols-4 gap-6 py-8 text-center px-6 lg:px-24 bg-white">
-          {[
-            ["100+", "Tutors"],
-            ["300,000+", "5-star reviews"],
-            ["15+", "Subjects"],
-            ["4.8 ★", "Average rating"],
-          ].map(([value, label]) => (
-            <div key={label}>
-              <strong className="text-xl">{value}</strong>
-              <span className="block text-sm text-gray-500">{label}</span>
-            </div>
-          ))}
-        </section>
+        {/* Stats section removed — placeholder figures */}
         <Empower />
         <TeacherAttraction/>
         <HowItWorks />
@@ -91,26 +79,29 @@ const Page = () => {
           <section className="story flex flex-col lg:flex-row gap-6 mt-16 px-6 md:px-12 lg:px-24">
             <div className="col flex-1 mb-6 lg:mb-0">
               <h1 className="text-3xl sm:text-4xl md:text-5xl -tracking-[.05rem] leading-snug md:leading-none font-medium">
-                The Story Behind <br /> Our Stillness
+                The Story Behind <br /> Knoveryx
               </h1>
             </div>
             <div className="col flex-1 mb-6">
               <TextAnimation>
                 <p className="text-base sm:text-lg md:text-[1.125rem] font-medium tracking-[1.25] leading-relaxed">
-                  Knoveryx Education LLC is an interdisciplinary digital
-                  learning platform co-founded by{" "}
+                  Knoveryx Education was founded by{" "}
                   <span className="font-bold text-[#063B8D]">
                     Muhammad Tayyeb Akram
-                  </span>{" "}
-                  and{" "}
+                  </span>
+                  , who leads the company as Founder and CEO. He started
+                  Knoveryx so that students and teachers anywhere in the world
+                  can reach strong teaching, whatever their country, curriculum
+                  or time zone. The platform's academic direction draws on the
+                  guidance of{" "}
                   <span className="font-bold text-[#ff6a97]">
                     Dr. Asmara Shafqat
                   </span>
-                  , offering academic support, teacher training, and
-                  professional development across global curricula. Designed to
-                  meet the evolving needs of students and educators in Oman,
-                  Pakistan, and beyond, Knoveryx combines rigorous content
-                  with flexible delivery.
+                  , Academic Advisor. Dr. Shafqat is an applied linguist with
+                  more than 20 years of experience in language education,
+                  corpus linguistics and teacher development. She advises on
+                  curriculum design, pedagogy and the quality of learning
+                  materials.
                 </p>
               </TextAnimation>
             </div>
@@ -146,7 +137,7 @@ const Page = () => {
             buttonHref="/tutors" // This fixes the link for students
             imageSrc="/images/student-girl.png"
             bgColor="bg-[#ff6a97]"
-            description="Connect with expert educators..."
+            description="Connect with expert educators and discover subjects that excite you. Whether you need help with school, exam preparation, or a new skill, your learning journey starts here."
             points={["Find Your Perfect Tutor", "Explore New Subjects"]}
           />
 

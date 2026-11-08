@@ -179,7 +179,7 @@ const Navbar = () => {
                 </SignInButton>
               </SignedOut>
               <p className="text-center text-xs text-slate-400 italic">
-                Empowering learners in Oman & Pakistan
+                Empowering learners everywhere
               </p>
             </div>
           </motion.div>
